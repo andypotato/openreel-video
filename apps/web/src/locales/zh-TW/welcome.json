@@ -1,0 +1,61 @@
+{
+  "screen": {
+    "templates": "範本",
+    "recentProjects": "最近的專案",
+    "brandName": "Open Reel Video",
+    "headline": "從想法到匯出。",
+    "subheadline": "都在你的瀏覽器裡。",
+    "description": "選擇一種格式並開始創作。之後隨時都可以變更。",
+    "startCreating": "開始創作",
+    "browseTemplates": "瀏覽範本",
+    "openEditor": "開啟編輯器",
+    "skipOnStartup": "啟動時略過",
+    "press": "按下",
+    "toSkip": "即可略過",
+    "formats": {
+      "vertical": {
+        "label": "直式",
+        "description": "TikTok、Reels、Shorts"
+      },
+      "horizontal": {
+        "label": "橫式",
+        "description": "YouTube、Vimeo、Web"
+      },
+      "square": {
+        "label": "正方形",
+        "description": "Instagram、Facebook"
+      }
+    }
+  },
+  "recovery": {
+    "title": "復原你的工作",
+    "description": "我們找到一個尚未儲存的專案",
+    "lastSaved": "上次儲存",
+    "startFresh": "重新開始",
+    "recoverProject": "復原專案",
+    "recovering": "復原中...",
+    "olderSavesAvailable_one": "還有 {{count}} 個較早的存檔可用",
+    "olderSavesAvailable_other": "還有 {{count}} 個較早的存檔可用",
+    "clearAllSavedProjects": "清除所有已儲存的專案",
+    "timeAgo": {
+      "justNow": "剛剛",
+      "minute_one": "{{count}} 分鐘前",
+      "minute_other": "{{count}} 分鐘前",
+      "hour_one": "{{count}} 小時前",
+      "hour_other": "{{count}} 小時前",
+      "day_one": "{{count}} 天前",
+      "day_other": "{{count}} 天前"
+    }
+  },
+  "templatePreview": {
+    "editableFields": "可編輯欄位",
+    "scenes": "場景",
+    "customizeTemplate": "自訂範本",
+    "advancedOptions": "進階選項",
+    "applying": "套用中...",
+    "useTemplate": "使用範本",
+    "errors": {
+      "failedToApplyTemplate": "套用範本失敗"
+    }
+  }
+}

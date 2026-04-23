@@ -1,0 +1,38 @@
+{
+  "dialog": {
+    "title": "設定"
+  },
+  "tabs": {
+    "canvas": "畫布",
+    "snapping": "吸附",
+    "appearance": "外觀"
+  },
+  "canvas": {
+    "title": "畫布選項",
+    "showGrid": "顯示網格",
+    "showGridDescription": "在畫布上顯示網格覆蓋",
+    "showGuides": "顯示輔助線",
+    "showGuidesDescription": "顯示對齊輔助線",
+    "showRulers": "顯示尺規",
+    "showRulersDescription": "在邊緣顯示尺規",
+    "gridSize": "網格大小"
+  },
+  "snapping": {
+    "title": "吸附選項",
+    "snapToGrid": "吸附到網格",
+    "snapToGridDescription": "將物件吸附到網格交點",
+    "snapToGuides": "吸附到輔助線",
+    "snapToGuidesDescription": "將物件吸附到輔助線",
+    "snapToObjects": "吸附到物件",
+    "snapToObjectsDescription": "將物件吸附到其他物件"
+  },
+  "appearance": {
+    "title": "外觀",
+    "theme": "主題",
+    "themeDescription": "介面外觀",
+    "themeValue": "深色（系統）",
+    "autoSave": "自動儲存",
+    "autoSaveDescription": "自動儲存專案",
+    "autoSaveSummary": "專案每 30 秒會自動儲存到瀏覽器儲存空間。"
+  }
+}

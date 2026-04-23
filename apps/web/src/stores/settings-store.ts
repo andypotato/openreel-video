@@ -50,12 +50,13 @@ export type TtsProvider = "piper" | "elevenlabs";
 export type LlmProvider = "openai" | "anthropic";
 export type AggregatorProvider = "kie-ai" | "freepik";
 export type SettingsTab = "general" | "api-keys";
+export type AppLanguage = "en" | "zh-TW";
 
 export interface SettingsState {
   // General preferences
   autoSave: boolean;
   autoSaveInterval: number;
-  language: string;
+  language: AppLanguage;
 
   // AI/Service preferences
   defaultTtsProvider: TtsProvider;
@@ -77,7 +78,7 @@ export interface SettingsState {
   // Actions
   setAutoSave: (enabled: boolean) => void;
   setAutoSaveInterval: (minutes: number) => void;
-  setLanguage: (lang: string) => void;
+  setLanguage: (lang: AppLanguage) => void;
   setDefaultTtsProvider: (provider: TtsProvider) => void;
   setDefaultLlmProvider: (provider: LlmProvider) => void;
   setDefaultAggregator: (provider: AggregatorProvider) => void;
@@ -122,7 +123,7 @@ export const useSettingsStore = create<SettingsState>()(
         setAutoSaveInterval: (minutes: number) =>
           set({ autoSaveInterval: Math.max(1, Math.min(30, minutes)) }),
 
-        setLanguage: (lang: string) => set({ language: lang }),
+        setLanguage: (lang: AppLanguage) => set({ language: lang }),
 
         setDefaultTtsProvider: (provider: TtsProvider) =>
           set({ defaultTtsProvider: provider }),

@@ -2,19 +2,21 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Switch } from "@openreel/ui";
 import { Label } from "@openreel/ui";
-import { useSettingsStore, SERVICE_REGISTRY, type TtsProvider, type LlmProvider, type AggregatorProvider } from "../../../stores/settings-store";
+import { useSettingsStore, SERVICE_REGISTRY, type TtsProvider, type LlmProvider, type AggregatorProvider, type AppLanguage } from "../../../stores/settings-store";
 
 export const GeneralPanel: React.FC = () => {
   const { t } = useTranslation();
   const {
     autoSave,
     autoSaveInterval,
+    language,
     defaultTtsProvider,
     defaultLlmProvider,
     defaultAggregator,
     configuredServices,
     setAutoSave,
     setAutoSaveInterval,
+    setLanguage,
     setDefaultTtsProvider,
     setDefaultLlmProvider,
     setDefaultAggregator,
@@ -43,6 +45,28 @@ export const GeneralPanel: React.FC = () => {
 
   return (
     <div className="space-y-6 pb-4">
+      <div className="space-y-4">
+
+        <div className="flex items-center justify-between gap-3">
+          <div>
+            <Label className="text-sm text-text-secondary">{t("settings:general.language")}</Label>
+            <p className="text-xs text-text-muted mt-0.5">
+              {t("settings:general.languageDescription")}
+            </p>
+          </div>
+          <select
+            value={language}
+            onChange={(e) => setLanguage(e.target.value as AppLanguage)}
+            className="h-9 rounded-md border border-input bg-background px-3 text-sm min-w-[180px]"
+          >
+            <option value="en">{t("settings:general.languageOptions.en")}</option>
+            <option value="zh-TW">{t("settings:general.languageOptions.zhTW")}</option>
+          </select>
+        </div>
+      </div>
+
+      <div className="h-px bg-border" />
+
       {/* Auto-save */}
       <div className="space-y-4">
         <h3 className="text-sm font-medium text-text-primary">{t("settings:general.autoSaveTitle")}</h3>

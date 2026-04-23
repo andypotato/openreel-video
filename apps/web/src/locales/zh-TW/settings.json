@@ -1,0 +1,102 @@
+{
+  "dialog": {
+    "title": "設定",
+    "description": "設定偏好並管理 API 金鑰"
+  },
+  "tabs": {
+    "general": "一般",
+    "apiKeys": "API 金鑰"
+  },
+  "general": {
+    "languageTitle": "語言",
+    "languageDescription": "選擇介面顯示語言",
+    "language": "語言",
+    "languageOptions": {
+      "en": "English",
+      "zhTW": "繁體中文（台灣）"
+    },
+    "autoSaveTitle": "自動儲存",
+    "enableAutoSave": "啟用自動儲存",
+    "autoSaveDescription": "定期自動儲存你的專案",
+    "saveEvery": "每隔",
+    "intervals": {
+      "oneMinute": "1 分鐘",
+      "twoMinutes": "2 分鐘",
+      "fiveMinutes": "5 分鐘",
+      "tenMinutes": "10 分鐘",
+      "fifteenMinutes": "15 分鐘",
+      "thirtyMinutes": "30 分鐘"
+    },
+    "defaultProvidersTitle": "預設 AI 服務",
+    "defaultProvidersDescription": "選擇各項功能預設使用的服務",
+    "ttsProvider": "文字轉語音 / 語音轉語音",
+    "llmProvider": "AI 助手（LLM）",
+    "aggregator": "AI 整合服務",
+    "aggregatorDescription": "影片 / 圖像生成、超解析與創意工具",
+    "piperBuiltIn": "Piper（免費，內建）"
+  },
+  "security": {
+    "secureApiKeyStorage": "安全的 API 金鑰儲存",
+    "setupMasterPasswordDescription": "設定主密碼來加密並保護已儲存的 API 金鑰。",
+    "setupMasterPassword": "設定主密碼",
+    "sessionLocked": "工作階段已鎖定",
+    "unlockDescription": "輸入主密碼以檢視和管理你的 API 金鑰。",
+    "unlock": "解鎖",
+    "changePassword": "變更密碼",
+    "lock": "鎖定",
+    "setMasterPasswordTitle": "設定主密碼",
+    "unlockSettingsTitle": "解鎖設定",
+    "changeMasterPasswordTitle": "變更主密碼",
+    "setMasterPasswordBody": "建立主密碼以加密你儲存的 API 金鑰。",
+    "unlockSettingsBody": "輸入主密碼以存取你加密的 API 金鑰。",
+    "changeMasterPasswordBody": "變更你的主密碼。所有已儲存的金鑰都會重新加密。",
+    "currentPassword": "目前密碼",
+    "enterCurrentPassword": "輸入目前密碼",
+    "password": "密碼",
+    "masterPassword": "主密碼",
+    "newPassword": "新密碼",
+    "confirmPassword": "確認密碼",
+    "confirmNewPassword": "確認新密碼",
+    "minimumCharacters": "至少 8 個字元",
+    "repeatPassword": "再次輸入密碼",
+    "repeatNewPassword": "再次輸入新密碼",
+    "passwordGuidance": "你的密碼會透過 PBKDF2（100k 次迭代）衍生出加密金鑰。API 金鑰會使用 AES-256-GCM 加密。若忘記此密碼，已儲存的金鑰將無法復原。",
+    "processing": "處理中...",
+    "setPassword": "設定密碼",
+    "validation": {
+      "passwordTooShort": "密碼至少需要 8 個字元",
+      "passwordsDoNotMatch": "密碼不一致",
+      "newPasswordTooShort": "新密碼至少需要 8 個字元",
+      "newPasswordsDoNotMatch": "新密碼不一致",
+      "incorrectPassword": "密碼錯誤",
+      "operationFailed": "操作失敗。請檢查你目前的密碼。",
+      "unknownError": "發生錯誤"
+    }
+  },
+  "apiKeys": {
+    "keysStored_one": "已儲存 {{count}} 個金鑰",
+    "keysStored_other": "已儲存 {{count}} 個金鑰",
+    "showKey": "顯示金鑰",
+    "hideKey": "隱藏金鑰",
+    "deleteKey": "刪除金鑰",
+    "addServiceKey": "新增 {{service}} 金鑰",
+    "keyLabel": "金鑰",
+    "pasteKeyPlaceholder": "在此貼上你的 API 金鑰",
+    "saveKey": "儲存金鑰",
+    "addApiKey": "新增 API 金鑰",
+    "added": "已新增",
+    "updated": "已更新",
+    "serviceKeySaved": "{{service}} 金鑰已儲存",
+    "serviceKeyRemoved": "{{service}} 金鑰已移除",
+    "encryptedAndStored": "API 金鑰已加密並儲存",
+    "failedToSave": "儲存失敗",
+    "failedToDelete": "刪除失敗",
+    "failedToDecrypt": "解密失敗",
+    "masterPasswordSet": "主密碼已設定",
+    "apiKeysEncrypted": "你的 API 金鑰將會被加密",
+    "sessionUnlocked": "工作階段已解鎖",
+    "manageApiKeys": "你現在可以管理 API 金鑰",
+    "passwordChanged": "密碼已變更",
+    "keysReEncrypted": "所有金鑰都已重新加密"
+  }
+}

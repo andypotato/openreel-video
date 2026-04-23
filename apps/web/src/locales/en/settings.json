@@ -8,6 +8,13 @@
     "apiKeys": "API Keys"
   },
   "general": {
+    "languageTitle": "Language",
+    "languageDescription": "Choose the interface display language",
+    "language": "Language",
+    "languageOptions": {
+      "en": "English",
+      "zhTW": "Traditional Chinese (Taiwan)"
+    },
     "autoSaveTitle": "Auto Save",
     "enableAutoSave": "Enable Auto Save",
     "autoSaveDescription": "Automatically save your project at regular intervals",

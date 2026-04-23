@@ -1,0 +1,159 @@
+{
+  "dialogs": {
+    "aspectRatioMatch": {
+      "title": "要符合影片尺寸嗎？",
+      "description": "你加入的影片尺寸與目前專案設定不同。",
+      "videoDimensions": "影片尺寸",
+      "currentProject": "目前專案",
+      "aspectRatio": "長寬比：{{value}}",
+      "summary": "更新專案尺寸可提供更好的編輯體驗，並避免匯出時被裁切。",
+      "keepCurrent": "維持目前設定",
+      "matchVideo": "套用影片尺寸"
+    }
+  },
+  "inspector": {
+    "crop": {
+      "adjust": "調整裁切",
+      "action": "裁切影片",
+      "region": "裁切區域：",
+      "position": "位置：",
+      "reset": "重設裁切"
+    }
+  },
+  "exportDialog": {
+    "title": "匯出影片",
+    "tabs": {
+      "presets": "預設",
+      "custom": "自訂"
+    },
+    "recommendedForYourVideo": "適合你的影片",
+    "aspectRatioLabels": {
+      "vertical": "直式（TikTok、Reels、Shorts）",
+      "square": "正方形（Instagram 貼文）",
+      "horizontal": "橫式（YouTube、Twitter）"
+    },
+    "fields": {
+      "format": "格式",
+      "codec": "編碼",
+      "resolution": "解析度",
+      "frameRate": "幀率",
+      "bitrate": "位元率（kbps）",
+      "quality": "畫質",
+      "audioSettings": "音訊設定",
+      "qualityEnhancement": "提升畫質（超解析）",
+      "qualityMode": "畫質模式",
+      "sharpening": "銳利化"
+    },
+    "options": {
+      "vertical1080p": "直式 1080p",
+      "square1080": "正方形 1080",
+      "fast": "快速",
+      "balanced": "平衡"
+    },
+    "qualityScale": {
+      "smaller": "較小",
+      "better": "較佳"
+    },
+    "descriptions": {
+      "upscaling": "匯出到高於原始素材的解析度時提升畫質。使用邊緣導向插值讓細節更銳利。"
+    },
+    "status": {
+      "estimateTime": "預估時間：",
+      "getAccurateEstimate": "取得更準確的預估",
+      "testing": "測試中...",
+      "hardwareAccelerated": "硬體加速",
+      "cpu": "CPU",
+      "gpu": "GPU",
+      "codecs": "編碼器",
+      "unknown": "未知",
+      "hardwareEncode": "硬體編碼",
+      "softwareOnly": "僅軟體",
+      "cores": "{{count}} 核心",
+      "maxDuration": "最長 {{seconds}} 秒"
+    },
+    "actions": {
+      "start": "開始匯出"
+    }
+  },
+  "searchModal": {
+    "placeholderForClip": "搜尋 {{type}} 片段的效果...",
+    "placeholderAll": "搜尋所有效果與工具...",
+    "noEffectsFound": "找不到效果",
+    "tryDifferentSearchTermOrCategory": "試試其他關鍵字或分類",
+    "effectsAvailable_one": "有 {{count}} 個效果可用",
+    "effectsAvailable_other": "有 {{count}} 個效果可用",
+    "navigate": "移動",
+    "select": "選取"
+  },
+  "saveTemplateDialog": {
+    "title": "另存為範本",
+    "success": "範本已成功儲存！",
+    "validation": {
+      "nameRequired": "範本名稱為必填",
+      "descriptionRequired": "描述為必填"
+    },
+    "fields": {
+      "templateName": "範本名稱",
+      "description": "描述",
+      "category": "分類",
+      "tags": "標籤（以逗號分隔）",
+      "authorName": "作者名稱",
+      "saveLocation": "儲存位置"
+    },
+    "placeholders": {
+      "templateName": "我的超棒範本",
+      "description": "說明這個範本的用途以及使用方式...",
+      "tags": "intro, animated, youtube",
+      "authorName": "你的名稱或使用者名稱"
+    },
+    "locations": {
+      "cloud": "雲端",
+      "local": "本機",
+      "cloudDescription": "儲存到雲端，可從任何裝置存取",
+      "localDescription": "儲存在瀏覽器本機儲存空間"
+    },
+    "actions": {
+      "saving": "儲存中...",
+      "save": "儲存範本"
+    }
+  },
+  "scriptView": {
+    "title": "專案 JSON",
+    "description": "將專案匯出或匯入為 JSON",
+    "tabs": {
+      "export": "匯出 JSON",
+      "import": "匯入"
+    },
+    "actions": {
+      "download": "下載 JSON",
+      "revalidate": "重新驗證",
+      "importProject": "匯入專案"
+    },
+    "states": {
+      "noProjectData": "沒有可匯出的專案資料。",
+      "dropHere": "將 JSON 檔拖放到這裡",
+      "dropHereOrClick": "將 JSON 檔拖放到這裡，或點擊瀏覽",
+      "acceptsProjectFiles": "接受 .json 專案檔",
+      "charactersLoaded": "已載入 {{count}} 個字元",
+      "validating": "驗證中...",
+      "validProject": "有效的專案 JSON，可直接匯入",
+      "missingAssets": "缺少素材",
+      "missingAssetsHelp": "這些素材會以佔位內容匯入，之後可以再替換。",
+      "invalidFileType": "請上傳 .json 檔案"
+    }
+  },
+  "kieaiDialog": {
+    "title": "使用 KieAI 建立",
+    "sourceImage": "來源圖片",
+    "submitting": "送出中...",
+    "submissionFailed": "送出失敗",
+    "uploading": "正在上傳並提交任務...",
+    "errors": {
+      "uploadMissingUrl": "上傳成功，但回傳結果沒有檔案網址。請查看主控台中的回應內容。",
+      "unknownModel": "未知模型"
+    },
+    "actions": {
+      "backToModelSelection": "返回模型選擇"
+    }
+  }
+}
